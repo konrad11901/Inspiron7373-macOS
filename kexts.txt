@@ -1,0 +1,39 @@
+- AppleALC by acidanthera (https://github.com/acidanthera/AppleALC)
+An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
+
+- CodecCommander by RehabMan (https://github.com/RehabMan/EAPD-Codec-Commander)
+Used for updating EAPD (External Amplifier) state on HDA (High Definition Audio) codecs that use given amp on Speaker or Headphone nodes (both, or even extra ones in some cases).
+
+- CPUFriend by acidanthera (https://github.com/acidanthera/CPUFriend)
+A Lilu plug-in for dynamic power management data injection.
+
+- CPUFriendDataProvider by egore24 (https://github.com/the-darkvoid/XPS9360-macOS/tree/master/kexts/i7-8550u/CPUFriendDataProvider.kext)
+Frequency vectors for CPUFriend, made for i7-8550U CPU.
+
+- Lilu by acidanthera (https://github.com/acidanthera/Lilu)
+An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
+
+- NoTouchID by al3xtjames (https://github.com/al3xtjames/NoTouchID)
+Lilu plugin for disabling Touch ID support.
+
+- VirtualSMC + plugins (SMCBatteryManager, SMCProcessor, SMCSuperIO) by acidanthera (https://github.com/acidanthera/VirtualSMC/releases)
+Advanced Apple SMC emulator in the kernel.
+
+- USBMap generated with USBMap tool by corpnewt (https://github.com/corpnewt/USBMap)
+
+- VoodooI2C + VoodooI2CHID by alexandred (https://github.com/alexandred/VoodooI2C)
+Intel I2C controller and slave device drivers for macOS.
+
+- VoodooPS2Controller by acidanthera (https://github.com/acidanthera/VoodooPS2)
+Used to add support for PS/2 deviced (keyboard).
+
+- WhateverGreen by acidanthera (https://github.com/acidanthera/WhateverGreen)
+Lilu plugin providing patches to select GPUs on macOS
+
+Optional:
+
+- IntelBluetoothFirmware + IntelBluetoothInjector by zxystd (https://github.com/zxystd/IntelBluetoothFirmware)
+A kernel extension that uploads Intel Wireless Bluetooth Firmware to provide native Bluetooth in macOS.
+
+- NullEthernet by RehabMan (https://github.com/RehabMan/OS-X-Null-Ethernet)
+A "Null" (Fake) Ethernet driver for OS X meant to be used when you have no working Ethernet or AirPort.
