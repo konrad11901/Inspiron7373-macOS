@@ -13,11 +13,10 @@ This repository contains an OpenCore configuration to run macOS Catalina (10.15.
 * Firmware: [1.16.0](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=gdtxp&oscode=wt64a&productcode=inspiron-13-7373-2-in-1-laptop)
 
 ## What doesn't work or works partially
-* Combo jack (macOS detects that the headphones are plugged, but no sound is coming out - tested all AppleALC layouts)  
-Solution: CodecCommander (included) + ALCPlugFix ([that one](https://github.com/black-dragon74/ALCPlugFix/releases) seems to work, but only when launched manually - doesn't work on boot)
+* Combo jack (This is a weird thing because you have to pull the headphone jack away from the computer for about 0.2mm, then change the slider balance values for it to work properly).
 * Touchscreen - one finger works as a stylus, two fingers behave as one, three as two, four as three
-* Wi-fi card (needs to be replaced)
-* SD Card reader
+* Wi-fi card (needs to be replaced or wait for [AppleIntelWifiAdapter]https://github.com/appleintelwifi/adapter or [itlwm]https://github.com/zxystd/itlwm/ to work.)
+* SD Card reader (Note from Baddles: Port must be injected as a HS0x something along with port type as "internal" (aka 255) in usbmap to work. This works properly on my machine).
 * IR Camera
 * In some rare cases, the VoodooI2C will crash on boot and thus the touchpad won't work. A simple restart will fix that - I do not currently have a better solution.
 
