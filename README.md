@@ -13,11 +13,10 @@ This repository contains an OpenCore configuration to run macOS Catalina (10.15.
 * Firmware: [1.16.0](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=gdtxp&oscode=wt64a&productcode=inspiron-13-7373-2-in-1-laptop)
 
 ## What doesn't work or works partially
-* Combo jack (macOS detects that the headphones are plugged, but no sound is coming out - tested all AppleALC layouts)  
-Solution: CodecCommander (included) + ALCPlugFix ([that one](https://github.com/black-dragon74/ALCPlugFix/releases) seems to work, but only when launched manually - doesn't work on boot)
+* Combo jack (according to @baddles, you have to pull the headphone jack away from the computer for about 0.2mm, then change the slider balance values for it to work properly)  
+Solution: VerbStub (included) + [ComboJackFix](https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/PostInstall/CombojackFix)
 * Touchscreen - one finger works as a stylus, two fingers behave as one, three as two, four as three
-* Wi-fi card (needs to be replaced)
-* SD Card reader
+* Wi-fi card (needs to be replaced - alternatively, wait for [AppleIntelWifiAdapter](https://github.com/appleintelwifi/adapter) or [itlwm](https://github.com/zxystd/itlwm/) to work)
 * IR Camera
 * In some rare cases, the VoodooI2C will crash on boot and thus the touchpad won't work. A simple restart will fix that - I do not currently have a better solution.
 
@@ -51,5 +50,6 @@ ex.
 
 ## Credits
 * [the-darkvoid](https://github.com/the-darkvoid) for [Dell XPS 9360 repository](https://github.com/the-darkvoid/XPS9360-macOS)
+* [tctien342](https://github.com/tctien342) for [Dell Inspiron 7591 repository](https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh)
 * [acidanthera](https://github.com/acidanthera) for [OpenCore](https://github.com/acidanthera/OpenCorePkg) 
 * Kexts developers listed in kexts.txt
