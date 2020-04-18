@@ -1,9 +1,6 @@
 - AppleALC by acidanthera (https://github.com/acidanthera/AppleALC)
 An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
 
-- CodecCommander by RehabMan (https://github.com/RehabMan/EAPD-Codec-Commander)
-Used for updating EAPD (External Amplifier) state on HDA (High Definition Audio) codecs that use given amp on Speaker or Headphone nodes (both, or even extra ones in some cases).
-
 - CPUFriend by acidanthera (https://github.com/acidanthera/CPUFriend)
 A Lilu plug-in for dynamic power management data injection.
 
@@ -15,6 +12,9 @@ An open source kernel extension bringing a platform for arbitrary kext, library,
 
 - NoTouchID by al3xtjames (https://github.com/al3xtjames/NoTouchID)
 Lilu plugin for disabling Touch ID support.
+
+- VerbStub taken form Inspiron 7591 repository by tctien342 (https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/Kexts/VerbStub.kext)
+Part of the combo jack fix. Should be used together with https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/PostInstall/CombojackFix.
 
 - VirtualSMC + plugins (SMCBatteryManager, SMCProcessor, SMCSuperIO) by acidanthera (https://github.com/acidanthera/VirtualSMC/releases)
 Advanced Apple SMC emulator in the kernel.
@@ -28,7 +28,7 @@ Intel I2C controller and slave device drivers for macOS.
 Used to add support for PS/2 deviced (keyboard).
 
 - WhateverGreen by acidanthera (https://github.com/acidanthera/WhateverGreen)
-Lilu plugin providing patches to select GPUs on macOS
+Lilu plugin providing patches to select GPUs on macOS.
 
 Optional:
 
