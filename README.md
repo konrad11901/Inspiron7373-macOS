@@ -14,13 +14,13 @@ This repository contains an OpenCore configuration to run macOS Catalina (10.15.
 
 ## What doesn't work or works partially
 * Combo jack (according to @baddles, you have to pull the headphone jack away from the computer for about 0.2mm, then change the slider balance values for it to work properly)  
-Solution: VerbStub (included) + [ComboJackFix](https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/PostInstall/CombojackFix)
-* Touchscreen - one finger works as a stylus, two fingers behave as one, three as two, four as three
+**Solution:** VerbStub (included) + [ComboJackFix](https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/PostInstall/CombojackFix) (disable SIP before installing)
+* Touchscreen - one finger works as a stylus, two fingers behave as one, three as two, four as three ([known VoodooI2C issue](https://github.com/alexandred/VoodooI2C/issues/275))
 * Wi-fi card (needs to be replaced - alternatively, wait for [AppleIntelWifiAdapter](https://github.com/appleintelwifi/adapter) or [itlwm](https://github.com/zxystd/itlwm/) to work)
 * IR Camera
 * In some rare cases, the VoodooI2C will crash on boot and thus the touchpad won't work. A simple restart will fix that - I do not currently have a better solution.
 
-**Any contributions are welcome** - it looks like the first two issues can be somehow fixed, I am just out of ideas. Also, check out the Issues tab.
+**Any contributions are welcome** - I'm by no means a Hackintosh expert (still learning a lot of things), so there are probably a lot of things to improve. Also, check out the Issues tab.
 
 ## BIOS Configuration
 Turn off the Secure Boot. That should be all.
