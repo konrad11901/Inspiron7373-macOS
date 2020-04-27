@@ -4,7 +4,7 @@ This repository contains an OpenCore configuration to run macOS Catalina (10.15.
 ## System Configuration
 * CPU: Intel Core i7-8550U
 * RAM: 16GB 2400MHz
-* SSD: SK Hynix SC311 256GB SATA3 M.2 (running [latest firmware](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=11r73&oscode=wt64a&productcode=inspiron-13-7373-2-in-1-laptop))
+* SSD: SK Hynix SC311 256GB SATA3 M.2 (running [latest firmware](https://www.dell.com/support/home/us/en/19/drivers/driversdetails?driverid=j5yr3&oscode=wt64a&productcode=inspiron-13-7373-2-in-1-laptop))
 * 1080p Touchscreen display, supports stylus (ELAN2097)
 * I2C Precision touchpad (DELL07EB)
 * Intel 7265 Wi-Fi card
@@ -15,8 +15,7 @@ This repository contains an OpenCore configuration to run macOS Catalina (10.15.
 ## What doesn't work or works partially
 * Combo jack (according to @baddles, you have to pull the headphone jack away from the computer for about 0.2mm, then change the slider balance values for it to work properly)  
 **Solution:** VerbStub (included) + [ComboJackFix](https://github.com/tctien342/Dell-Inspiron-7591-Hackintosh/tree/master/PostInstall/CombojackFix) (disable SIP before installing)
-* Touchscreen - one finger works as a stylus, two fingers behave as one, three as two, four as three ([known VoodooI2C issue](https://github.com/alexandred/VoodooI2C/issues/275))
-* Wi-fi card (needs to be replaced - alternatively, wait for [AppleIntelWifiAdapter](https://github.com/appleintelwifi/adapter) or [itlwm](https://github.com/zxystd/itlwm/) to work)
+* Wi-fi card - works partially with [itlwm](https://github.com/zxystd/itlwm/) (not provided in the repository - if you want to try it, compile it by yourself or wait for the official release builds). For the best results, it is recommended to replace the card wih a macOS compatible one (look [here](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/m2.html) for some recommendations).
 * IR Camera
 * In some rare cases, the VoodooI2C will crash on boot and thus the touchpad won't work. A simple restart will fix that - I do not currently have a better solution.
 
